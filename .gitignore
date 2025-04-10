@@ -1,0 +1,30 @@
+﻿# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build cache
+.vite/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
