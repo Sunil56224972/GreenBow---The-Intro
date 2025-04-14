@@ -1,0 +1,144 @@
+﻿/**
+ * GreenBow â€” Main Stylesheet
+ * 
+ * Core styles for the portfolio website.
+ * Compiled via Vite into assets/main-[hash].css
+ * 
+ * Structure:
+ * 1. Reset & Base
+ * 2. Typography
+ * 3. Layout & Grid
+ * 4. Navigation
+ * 5. Hero Section
+ * 6. About Section
+ * 7. Vision Section
+ * 8. Mission Section
+ * 9. Services Section
+ * 10. Contact Section
+ * 11. Animations
+ * 12. Responsive Breakpoints
+ * 
+ * @author Sunil
+ */
+
+/* ==========================================================
+   1. Reset & Base
+   ========================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Share Tech Mono', 'Source Code Pro', monospace;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   2. Typography
+   ========================================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', 'Gloria Hallelujah', cursive;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.hero-sub-title,
+.hero-sub-title-mobile {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #ffffff;
+}
+
+/* ==========================================================
+   3. Layout
+   ========================================================== */
+.section {
+  min-height: 100vh;
+  position: relative;
+}
+
+.section-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+}
+
+/* ==========================================================
+   4. Navigation
+   ========================================================== */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  transition: background 0.3s ease;
+}
+
+.top-bar.scrolled {
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+/* ==========================================================
+   11. Animations
+   ========================================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.section.visible .section-wrapper {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ==========================================================
+   12. Responsive
+   ========================================================== */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 12px 16px;
+  }
+
+  .hero-text-box {
+    display: none;
+  }
+
+  .hero-text-box-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-text-box-mobile {
+    display: none;
+  }
+}
