@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Site author: Sunil (sunilnathyogi008@gmail.com)
+# GitHub: https://github.com/Sunil56224972
+# Built from scratch by Sunil
+
+Sitemap: https://green-bow-the-intro.vercel.app/sitemap.xml

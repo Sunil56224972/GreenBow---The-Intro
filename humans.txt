@@ -1,0 +1,14 @@
+/* TEAM */
+Developer & Designer: Sunil
+Contact: sunilnathyogi008@gmail.com
+GitHub: https://github.com/Sunil56224972
+Location: India
+
+/* THANKS */
+Three.js — open source 3D library
+
+/* SITE */
+Last update: 2026/04
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Three.js, WebGL, Matter.js
+Software: Built from scratch by Sunil
