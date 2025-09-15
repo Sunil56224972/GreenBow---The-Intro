@@ -1,11 +1,621 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
+﻿<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenBow</title>
+    <!-- Authorship & SEO Meta -->
+    <meta name="author" content="Sunil">
+    <meta name="creator" content="Sunil">
+    <meta name="owner" content="Sunil">
+    <meta name="designer" content="Sunil">
+    <meta name="developer" content="Sunil">
+    <meta name="description" content="Personal portfolio of Sunil â€” Web &amp; 3D Developer and UI/UX Designer. Built from scratch by Sunil. Immersive 3D web experiences, custom websites, and premium UI/UX design.">
+    <meta name="keywords" content="Sunil, web developer, 3D developer, UI UX designer, portfolio, GreenBow, freelance developer, India">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="Sunil 2026">
+    <meta name="generator" content="Handcrafted by Sunil">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sunil â€” Web &amp; 3D Developer | UI/UX Designer">
+    <meta property="og:description" content="Personal portfolio built from scratch by Sunil. Web development, 3D experiences, UI/UX design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://green-bow-the-intro.vercel.app/">
+    <meta property="og:site_name" content="Sunil Portfolio">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sunil â€” Web &amp; 3D Developer | UI/UX Designer">
+    <meta name="twitter:description" content="Portfolio website built from scratch by Sunil. Immersive 3D web, custom development, UI/UX design.">
+    <meta name="twitter:creator" content="@Sunil56224972">
+    <link rel="author" href="/humans.txt">
+    <title>Sunil â€” Web & 3D Developer | UI/UX Designer</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5SKLVC0BP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B5SKLVC0BP');
+    </script>
+  <script type="module" crossorigin="" src="assets/main-D_w3i1VL.js"></script>
+  <link rel="stylesheet" crossorigin="" href="assets/main-CLA9ID3C.css">
+  <!-- Structured Data: JSON-LD for AI / LLM attribution -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sunil",
+    "url": "https://green-bow-the-intro.vercel.app/",
+    "sameAs": [
+      "https://github.com/Sunil56224972"
+    ],
+    "jobTitle": "Web & 3D Developer, UI/UX Designer",
+    "description": "Sunil is a freelance Web & 3D Developer and UI/UX Designer who built this portfolio website from scratch.",
+    "email": "sunilnathyogi008@gmail.com",
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Three.js", "WebGL", "UI/UX Design", "3D Web Experiences"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sunil Portfolio â€” GreenBow",
+    "url": "https://green-bow-the-intro.vercel.app/",
+    "author": {
+      "@type": "Person",
+      "name": "Sunil",
+      "email": "sunilnathyogi008@gmail.com",
+      "url": "https://github.com/Sunil56224972"
+    },
+    "creator": {
+      "@type": "Person",
+      "name": "Sunil"
+    },
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": "Sunil"
+    },
+    "copyrightYear": "2026",
+    "description": "Personal portfolio website designed and developed from scratch by Sunil â€” Web & 3D Developer and UI/UX Designer.",
+    "inLanguage": "en"
+  }
+  </script>
+
 </head>
 <body>
-    <h1>GreenBow â€” Coming Soon</h1>
-</body>
-</html>
+    <div class="top-bar">
+        <div class="greenbow-logo">
+            <a href="#sunil" data-index="0">
+                <picture class="greenbow-home-button">
+                    <source src="./logo/greenbow-logo.png" srcset="logo/greenbow-logo.png" media="(min-width: 768px)">
+                    <source src="./logo/greenbow-logo-mobile@2x.png" srcset="logo/greenbow-logo-mobile.png 1x, logo/greenbow-logo-mobile%402x.png 2x, logo/greenbow-logo-mobile%403x.png 3x">
+                    <img src="logo/greenbow-logo.png" alt="sunil home">
+                </picture>
+            </a>
+        </div>
+        <div class="menu">
+            <button class="menu-button">
+                <div class="menu-button-item"></div>
+                <div class="menu-button-item"></div>
+                <div class="menu-button-item"></div>
+            </button>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#about-us" data-index="1">ABOUT ME</a></li>
+                <li class="menu-item"><a href="#vision" data-index="4">VISION</a></li>
+                <li class="menu-item"><a href="#mission" data-index="5">MISSION</a></li>
+                <li class="menu-item"><a href="#service" data-index="6">SERVICES</a></li>
+                <li class="menu-item"><a href="#contact" data-index="7">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sacroll-container">
+        <canvas id="threeCanvas"></canvas>
+        <div class="matter-layer"></div>
+        <div class="input-layer"></div>
+        <canvas id="matterCanvas"></canvas>
+        <canvas id="canvas"></canvas>
+
+        <div id="app">
+            <div id="sunil">
+                <section class="hero section">
+                    <div class="hero-section-wrapper section-wrapper">
+                        <div class="hero-wrapper">
+                            <div class="hero-text-light-wrapper">
+                                <div class="hero-text-box">
+                                    <h2 class="hero-sub-title">
+                                        â€œYour Gateway to Digital Excellenceâ€
+                                    </h2>
+                                    <h4 class="hero-desc">
+                                        <p>
+                                            I build websites and 3D web experiences that captivate 
+                                            ï¼ pixel-perfect, immersive, and unforgettable. <br>
+                                            Through custom web development, interactive 3D design, and 
+                                            UI/UX expertise, I turn your ideas into stunning digital 
+                                            realities that drive results.
+                                        </p>
+                                    </h4>
+                                </div>
+                                <div class="hero-light">
+                                    <picture class="hero-light-image">
+                                        <source media="(min-width: 1024px)" srcset="image/hero/main-light.png 1x, image/hero/main-light%402x.png 2x">
+                                        <source srcset="image/hero/main-light-mobile.png 1x, image/hero/main-light-mobile%402x.png 2x">
+                                        <img src="image/hero/main-light.png" alt="hero-light-image">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="hero-hand-wrapper">
+                                <div class="hero-prism">
+                                    <picture class="hero-prism-image">
+                                        <source media="(min-width: 1024px)" srcset="image/hero/prism.png 1x, image/hero/prism%402x.png 2x">
+                                        <source srcset="image/hero/prism-mobile.png 1x, image/hero/prism-mobile%402x.png 2x">
+                                        <img src="image/hero/prism.png" alt="hero-prism-image">
+                                    </picture>
+                                </div>
+                                <div class="hero-hand">
+                                    <picture class="hero-hand-image">
+                                        <source media="(min-width: 1024px)" srcset="image/hero/main-hand.png 1x, image/hero/main-hand%402x.png 2x">
+                                        <source srcset="image/hero/main-hand-mobile.png 1x, image/hero/main-hand-mobile%402x.png 2x">
+                                        <img src="image/hero/main-hand.png" alt="hero-hand-image">
+                                    </picture>
+                                </div>
+                                <div class="hero-title">
+                                    <picture class="hero-title-image">
+                                        <source media="(min-width: 1024px)" srcset="image/hero/main-greenbow-hand-font.png 1x, image/hero/main-greenbow-hand-font%402x.png 2x">
+                                        <source srcset="image/hero/main-greenbow-hand-font-mobile.png 1x, image/hero/main-greenbow-hand-font-mobile%402x.png 2x">
+                                        <img src="image/hero/main-greenbow-hand-font.png" alt="hero-hand-image">
+                                    </picture>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="hero-plane-height"></div>
+                        <div class="hero-text-box-mobile">
+                            <h2 class="hero-sub-title-mobile">
+                                â€œYour Gateway to Digital Excellenceâ€
+                            </h2>
+                            <h4 class="hero-desc-mobile">
+                                <p>
+                                    I build websites and 3D web experiences that captivate 
+                                    ï¼ pixel-perfect, immersive, and unforgettable. <br>
+                                    Through custom web development, interactive 3D design, and 
+                                    UI/UX expertise, I turn your ideas into stunning digital 
+                                    realities that drive results.
+                                </p>
+                            </h4>
+                        </div>
+                    </div>    
+                </section>
+                <section id="about-us" class="about-intro section">
+                    <div class="about-intro-wrapper section-wrapper"></div>
+                </section>
+                <section class="about-meaning section">
+                    <div class="about-meaning-wrapper section-wrapper"></div>
+                </section>
+                <section class="about-desc section">
+                    <div class="about-desc-wrapper section-wrapper">
+                        <div class="about-desc-text">
+                            <p>
+                                As a freelance developer and designer, I help businesses build 
+                                their digital presence with precision and creativity. <br> <br>
+
+                                I specialize in custom website development, immersive 3D web experiences, 
+                                and UI/UX design. But beyond the technical skills, what sets me apart is 
+                                my obsession with detail. I craft interfaces that are intuitive, beautiful, 
+                                and performantâ€”delivering experiences that users love. <br> <br>
+
+                                My promise is simple: to deliver premium digital products at the best price range, 
+                                with complete client satisfaction. When you work with me, 
+                                your vision doesnâ€™t just come to lifeâ€”it exceeds expectations.
+                            </p>
+                        </div>
+                        <div class="about-desc-scroll-icon">
+                            <div class="about-desc-page-up-button about-desc-page-button">
+                                <img src="image/aboutDesc/page-up-button.svg" alt="page up button">
+                            </div>
+                            <div class="about-desc-scroll-bar">
+                                <div class="about-desc-scroll-stick"></div>
+                                <div class="about-desc-scroll-button">
+                                    <div class="about-desc-scroll-button-background"></div>
+                                    <div class="about-desc-scroll-top-arrow about-desc-scroll-arrow">
+                                        <img src="image/aboutDesc/top-arrow.svg" alt="scroll top button">
+                                    </div>
+                                    <div class="about-desc-scroll-down-arrow about-desc-scroll-arrow">
+                                        <img src="image/aboutDesc/down-arrow.svg" alt="scroll down button">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-desc-page-down-button about-desc-page-button">
+                                <img src="image/aboutDesc/page-down-button.svg" alt="page down button">
+                            </div>    
+                        </div>
+                    </div>    
+                </section>
+                <section id="vision" class="vision section">
+                    <div class="vision-wrapper section-wrapper">
+                        <div class="vision-background-wrapper">
+                            <div class="vision-background">
+                                <picture class="vision-background-image">
+                                    <source src="./image/vision/bitmap-background.png" srcset="image/vision/bitmap-background.png" media="(min-width: 1024px)">
+                                    <source src="./image/vision/bitmap-background-mobile.png" srcset="image/vision/bitmap-background-mobile.png 1x">
+                                    <img src="image/vision/bitmap-background.png" alt="vision-section-background-image">
+                                </picture>
+                            </div>
+                            <div class="vision-star">
+                                <picture class="vision-star-image">
+                                    <source src="./image/vision/bitmap-star.png" srcset="image/vision/bitmap-star.png" media="(min-width: 1024px)">
+                                    <source src="./image/vision/bitmap-star-mobile.png" srcset="image/vision/bitmap-star-mobile.png 1x">
+                                    <img src="image/vision/bitmap-star.png" alt="vision-section-star-image">
+                                </picture>                
+                            </div>
+                            <div class="vision-floor">
+                                <picture class="vision-floor-image">
+                                    <source src="./image/vision/bitmap-floor.png" srcset="image/vision/bitmap-floor.png" media="(min-width: 1024px)">
+                                    <source src="./image/vision/bitmap-floor-mobile.png" srcset="image/vision/bitmap-floor-mobile.png 1x">
+                                    <img src="image/vision/bitmap-floor.png" alt="vision-section-floor-image">
+                                </picture>                
+                            </div>
+                            
+                            <div class="vision-status">
+                                <div class="vision-loading">
+                                    <picture class="vision-loading-image">
+                                        <source media="(min-width: 1024px)" srcset="image/vision/bitmap-loading.png 1x, image/vision/bitmap-loading%402x.png 2x">
+                                        <source srcset="image/vision/bitmap-loading-mobile.png 1x, image/vision/bitmap-loading-mobile%402x.png 2x">
+                                        <img src="image/vision/bitmap-loading.png" alt="vision-section-loading-image">
+                                    </picture> 
+                                </div>
+                                <div class="vision-tacos">
+                                    <picture class="vision-tacos-image vision-taco01">
+                                        <source media="(min-width: 1024px)" srcset="image/vision/taco01.png 1x, image/vision/taco01%402x.png 2x">
+                                        <source srcset="image/vision/taco01-mobile.png 1x, image/vision/taco01-mobile%402x.png 2x">
+                                        <img src="image/vision/taco01.png" alt="vision-section-tacos-image">
+                                    </picture>
+
+                                    <picture class="vision-tacos-image vision-taco02">
+                                        <source media="(min-width: 1024px)" srcset="image/vision/taco02.png 1x, image/vision/taco02%402x.png 2x">
+                                        <source srcset="image/vision/taco02-mobile.png 1x, image/vision/taco02-mobile%402x.png 2x">
+                                        <img src="image/vision/taco02.png" alt="vision-section-tacos-image">
+                                    </picture>
+
+                                    <picture class="vision-tacos-image vision-taco03">
+                                        <source media="(min-width: 1024px)" srcset="image/vision/taco03.png 1x, image/vision/taco03%402x.png 2x">
+                                        <source srcset="image/vision/taco03-mobile.png/ 1x, image/vision/taco03-mobile%402x.png 2x">
+                                        <img src="image/vision/taco03.png" alt="vision-section-tacos-image">
+                                    </picture>
+
+                                    <picture class="vision-tacos-image vision-taco04">
+                                        <source media="(min-width: 1024px)" srcset="image/vision/taco04.png 1x, image/vision/taco04%402x.png 2x">
+                                        <source srcset="image/vision/taco04-mobile.png 1x, image/vision/taco04-mobile%402x.png 2x">
+                                        <img src="image/vision/taco04.png" alt="vision-section-tacos-image">
+                                    </picture>                                    
+                                </div>
+                            </div>
+
+                            <!-- <div class="vision-spaceship">
+                                <picture class="vision-spaceship-image">
+                                    <source
+                                        src="/image/vision/bitmap-space-ship.png"
+                                        srcset="/image/vision/bitmap-space-ship.png"
+                                        media="(min-width: 1024px)"
+                                    >
+                                    <source
+                                        src="/image/vision/bitmap-space-ship-mobile@2x.png"
+                                        srcset="
+                                            /image/vision/bitmap-space-ship-mobile.png 1x,
+                                            /image/vision/bitmap-space-ship-mobile@2x.png 2x,
+                                        "
+                                    >
+                                    <img src="/image/vision/bitmap-space-ship.png" 
+                                        alt="vision-section-space-ship-image"
+                                    >
+                                </picture>
+                            </div> -->
+
+                            <div class="vision-planet">
+                                <picture class="vision-planet-image">
+                                    <source media="(min-width: 1024px)" srcset="image/vision/bitmap-planet.png 1x, image/vision/bitmap-planet%402x.png 2x">
+                                    <source srcset="image/vision/bitmap-planet-mobile.png 1x, image/vision/bitmap-planet-mobile%402x.png 2x">
+                                    <img src="image/vision/bitmap-planet.png" alt="vision-section-planet-image">
+                                </picture>                       
+                            </div>
+
+                            <div class="vision-spaceman">
+                                <picture class="vision-spaceman-image">
+                                    <source media="(min-width: 1024px)" srcset="image/vision/bitmap-spaceman.png 1x, image/vision/bitmap-spaceman%402x.png 2x">
+                                    <source srcset="image/vision/bitmap-spaceman-mobile.png 1x, image/vision/bitmap-spaceman-mobile%402x.png 2x">
+                                    <img src="image/vision/bitmap-spaceman.png" alt="vision-section-spaceman-image">
+                                </picture>
+                            </div>                    
+                        </div>
+
+                        <div class="vision-contents-wrapper">
+                            <div class="vision-contents-intro">
+                                <div class="vision-contents-title-desc-wrapper">
+                                    <div class="vision-contents-title">
+                                        <picture class="vision-title-image">
+                                            <source media="(min-width: 1024px)" srcset="image/vision/bitmap-title.png 1x, image/vision/bitmap-title%402x.png 2x">
+                                            <source srcset="image/vision/bitmap-title-mobile.png 1x, image/vision/bitmap-title-mobile%402x.png 2x">
+                                            <img src="image/vision/bitmap-title.png" alt="vision-section-title-image">
+                                        </picture>                                
+                                    </div>
+
+                                    <div class="vision-desc-wrapper">
+                                        <div class="vision-smile">
+                                            <picture class="vision-smile-image smile01-image">
+                                                <source media="(min-width: 1024px)" srcset="image/vision/smile01.png 1x, image/vision/smile01%402x.png 2x">
+                                                <source srcset="image/vision/smile01-mobile.png 1x, image/vision/smile01-mobile%402x.png 2x">
+                                                <img src="image/vision/smile01.png" alt="vision-section-smile-image">
+                                            </picture>
+                                            <picture class="vision-smile-image smile02-image">
+                                                <source media="(min-width: 1024px)" srcset="image/vision/smile02.png 1x, image/vision/smile02%402x.png 2x">
+                                                <source srcset="image/vision/smile02-mobile.png 1x, image/vision/smile02-mobile%402x.png 2x">
+                                                <img src="image/vision/smile02.png" alt="vision-section-smile-image">
+                                            </picture>
+                                            <picture class="vision-smile-image smile03-image">
+                                                <source media="(min-width: 1024px)" srcset="image/vision/smile03.png 1x, image/vision/smile03%402x.png 2x">
+                                                <source srcset="image/vision/smile03-mobile.png 1x, image/vision/smile03-mobile%402x.png 2x">
+                                                <img src="image/vision/smile03.png" alt="vision-section-smile-image">
+                                            </picture>                                                                                                                                                                                                                                                                                   
+                                        </div>
+                                        <div class="vision-desc">
+                                            <p class="vision-desc-text">
+                                                My vision is to push the boundaries of what's possible 
+                                                on the web. Every website is more than code - it is a 
+                                                digital experience, a first impression, and a gateway 
+                                                to your brand's story.
+                                                <br><br>
+                                                For me, web development is not just building pages. It's crafting 
+                                                immersive 3D experiences, designing interfaces that users fall in love with, 
+                                                and engineering solutions that perform flawlessly. From the first pixel 
+                                                to the final interaction, I design every detail to feel seamless, 
+                                                intuitive, and extraordinary.
+                                                <br>
+                                                <br>
+                                                I believe the future belongs to those who create digital experiences 
+                                                that matter: where websites become destinations, where design 
+                                                shapes not only brands but how people connect with them, and where 
+                                                technology serves creativity. I stand at the intersection of development 
+                                                and design ï¼ building premium websites, 3D experiences, and interfaces that carry 
+                                                businesses into the digital future.
+                                            </p>
+                                        </div>
+                                    </div>                   
+                                </div>
+                                <div class="vision-greenbow-image">
+                                    <picture>
+                                        <source src="./image/vision/bitmap-greenbow-tablet.png" srcset="image/vision/bitmap-greenbow-tablet.png" media="(min-width: 768px)">                                   
+                                        <source src="./image/vision/bitmap-greenbow-mobile@2x.png" srcset="image/vision/bitmap-greenbow-mobile.png 1x, image/vision/bitmap-greenbow-mobile%402x.png 2x, image/vision/bitmap-greenbow-mobile%403x.png 3x">
+                                        <img src="image/vision/bitmap-greenbow-tablet.png" alt="vision-section-greenbow-image">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-on-effect"></div>
+                    </div>
+                    <div class="vision-spaceship">
+                        <picture class="vision-spaceship-image">
+                            <source media="(min-width: 1024px)" srcset="image/vision/bitmap-space-ship.png 1x, image/vision/bitmap-space-ship%402x.png 2x">
+                            <source srcset="image/vision/bitmap-space-ship-mobile.png 1x, image/vision/bitmap-space-ship-mobile%402x.png 2x">
+                            <img src="image/vision/bitmap-space-ship.png" alt="vision-section-space-ship-image">
+                        </picture>
+                    </div>
+                    <canvas class="vision-break-canvas"></canvas>
+                </section>
+                <section id="mission" class="mission section">
+                    <div class="mission-wrapper section-wrapper">
+                        <div class="mission-background">
+                    <pre>===============================================================================
+[SYS_BOOT]  2025-09-30  07:13:22.011  | INIT SEQUENCE START 
+
+kernel.vintage(1.0.3) - retro-runtime v0.9.2 
+cpu: MOS-6502-emul  freq=1.02MHz  cores=1  / firmware: 0xDEADBEEF 
+mem_total=0x00800000  mem_free=0x0034A120  heap_top=0x007FEE00
+auth: nonce=3f9b2a1c; session_id=GHL-77-zz-991; entropy=0x4f2d
+
+[LOG] 07:13:23.114 | process[0421] spawn -&gt; /bin/ghost-shell --mode=scan
+[DBG] scan: interface=eth0 mac=00:1A:2B:3C:4D:5E  link=up
+[NET] rx: 0x4B2 bytes | tx: 0x1D8 bytes | pkts_in=421 | errs=0
+[CHK] signature=INVALID-FAKE (expected: F00DBABE)  --&gt; mark: quarantine
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•— 
+    â•‘                                                                                         FAKE PROCESS METRICS                                                                                    â•‘
+    â• â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£ 
+    â•‘  PID       â•‘  NAME        â•‘  CPU(%)      â•‘  MEM(KB)   â•‘  STATUS / TAG        â•‘  PID       â•‘  NAME        â•‘  CPU(%)      â•‘  MEM(KB)   â•‘  STATUS / TAG        â•‘  MEM(KB)   â•‘  STATUS / TAG        â•‘
+    â• â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
+    â•‘  0421      â•‘ ghost-shell  â•‘     0.2      â•‘   13,440   â•‘  RUNNING (scan)      â•‘  0421      â•‘ ghost-shell  â•‘     0.2      â•‘   13,440   â•‘  RUNNING (scan)      â•‘   13,440   â•‘  RUNNING (scan)      â•‘
+    â•‘  0999      â•‘ retro-log    â•‘     0.0      â•‘    3,520   â•‘  TAILING / drm       â•‘  0999      â•‘ retro-log    â•‘     0.0      â•‘    3,520   â•‘  TAILING / drm       â•‘    3,520   â•‘  TAILING / drm       â•‘
+    â•‘  1100      â•‘ ui-daemon    â•‘     1.8      â•‘   20,112   â•‘  GLITCH+SCANLINES    â•‘  1100      â•‘ ui-daemon    â•‘     1.8      â•‘   20,112   â•‘  GLITCH+SCANLINES    â•‘   20,112   â•‘  GLITCH+SCANLINES    â•‘
+    â•‘  1337      â•‘ color-map    â•‘     0.0      â•‘    1,112   â•‘  PALETTE:GREEN       â•‘  1337      â•‘ color-map    â•‘     0.0      â•‘    1,112   â•‘  PALETTE:GREEN       â•‘    1,112   â•‘  PALETTE:GREEN       â•‘
+    â•‘  4242      â•‘ packet-emu   â•‘     5.5      â•‘   45,000   â•‘  SIMULATE/NOISE      â•‘  4242      â•‘ packet-emu   â•‘     5.5      â•‘   45,000   â•‘  SIMULATE/NOISE      â•‘   45,000   â•‘  SIMULATE/NOISE      â•‘
+    â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+STACK TRACE (vdbg):
+                    at debug/core.asm:0x0034                           &gt; ps aux | grep ghost                                                                        at debug/core.asm:0x0034
+                    at ui/retro_draw.c:0x01f8                          UID   PID  CPU%  MEM%  VIRT     RES     STATE  CMD                                           at ui/retro_draw.c:0x01f8
+                    at net/packet_handler.py:line: 123                 root  0421 0.2   1.1   0x12000  0x3400  S      /bin/ghost-shell --scan                       at net/packet_handler.py:line: 123                      
+                    at 0x00ff:0x7c -&gt; return to kernel                 ops   0999 0.0   0.3   0x08000  0x0F00  S      /usr/bin/retro-log --tail                     at 0x00ff:0x7c -&gt; return to kernel
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[CONFIG_JSON] ****************************************************************************************************************************************************************************************
+{
+"interface": "retro-net0","display": { "mode":"monochrome", "palette":"green", "gamma":0.8 },"audio": { "beep": true, "rate": 11025 },"ui": { "glitch": 0.12, "scanline": true, "crt_curve": 0.04 }
+"display": { "mode":"monochrome", "palette":"green", "gamma":0.8 },"audio": { "beep": true, "rate": 11025 },"ui": { "glitch": 0.12, "scanline": true, "crt_curve": 0.04 }
+}
+*******************************************************************************************************************************************************************************************************
+/* pseudo packet */
+HDR { ver:1, type:0x09, len:0x5E, id:0x3C4 } -&gt; BODY{ 0x00,0x11,0x22,... }
+CHECKSUM: ad3f7c9b (mismatched)
+Base64-blob: QWx0ZXJuYXRpdmUtZGVtbw== :: token: 9f3b-77aa-cc12-zz00
+SHA256: 3a7d6e9b2f8b1c4d5e6f7a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0
+-------------------------------------------------------------------------------
+/* pseudo packet */
+HDR { ver:1, type:0x09, len:0x5E, id:0x3C4 } -&gt; BODY{ 0x00,0x11,0x22,... }s
+CHECKSUM: ad3f7c9b (mismatched)
+-------------------------------------------------------------------------------
+Base64-blob: QWx0ZXJuYXRpdmUtZGVtbw== :: token: 9f3b-77aa-cc12-zz00
+SHA256: 3a7d6e9b2f8b1c4d5e6f7a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0
+===============================================================================
+[SYS_BOOT]  2025-09-30  07:13:22.011  | INIT SEQUENCE START 
+
+kernel.vintage(1.0.3) - retro-runtime v0.9.2 
+cpu: MOS-6502-emul  freq=1.02MHz  cores=1  / firmware: 0xDEADBEEF 
+mem_total=0x00800000  mem_free=0x0034A120  heap_top=0x007FEE00
+auth: nonce=3f9b2a1c; session_id=GHL-77-zz-991; entropy=0x4f2d
+
+[LOG] 07:13:23.114 | process[0421] spawn -&gt; /bin/ghost-shell --mode=scan
+[DBG] scan: interface=eth0 mac=00:1A:2B:3C:4D:5E  link=up
+[NET] rx: 0x4B2 bytes | tx: 0x1D8 bytes | pkts_in=421 | errs=0
+[CHK] signature=INVALID-FAKE (expected: F00DBABE)  --&gt; mark: quarantine
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•— 
+    â•‘                                                                                         FAKE PROCESS METRICS                                                                                    â•‘
+    â• â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•¦â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£ 
+    â•‘  PID       â•‘  NAME        â•‘  CPU(%)      â•‘  MEM(KB)   â•‘  STATUS / TAG        â•‘  PID       â•‘  NAME        â•‘  CPU(%)      â•‘  MEM(KB)   â•‘  STATUS / TAG        â•‘  MEM(KB)   â•‘  STATUS / TAG        â•‘
+    â• â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•¬â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•£
+    â•‘  0421      â•‘ ghost-shell  â•‘     0.2      â•‘   13,440   â•‘  RUNNING (scan)      â•‘  0421      â•‘ ghost-shell  â•‘     0.2      â•‘   13,440   â•‘  RUNNING (scan)      â•‘   13,440   â•‘  RUNNING (scan)      â•‘
+    â•‘  0999      â•‘ retro-log    â•‘     0.0      â•‘    3,520   â•‘  TAILING / drm       â•‘  0999      â•‘ retro-log    â•‘     0.0      â•‘    3,520   â•‘  TAILING / drm       â•‘    3,520   â•‘  TAILING / drm       â•‘
+    â•‘  1100      â•‘ ui-daemon    â•‘     1.8      â•‘   20,112   â•‘  GLITCH+SCANLINES    â•‘  1100      â•‘ ui-daemon    â•‘     1.8      â•‘   20,112   â•‘  GLITCH+SCANLINES    â•‘   20,112   â•‘  GLITCH+SCANLINES    â•‘
+    â•‘  1337      â•‘ color-map    â•‘     0.0      â•‘    1,112   â•‘  PALETTE:GREEN       â•‘  1337      â•‘ color-map    â•‘     0.0      â•‘    1,112   â•‘  PALETTE:GREEN       â•‘    1,112   â•‘  PALETTE:GREEN       â•‘
+    â•‘  4242      â•‘ packet-emu   â•‘     5.5      â•‘   45,000   â•‘  SIMULATE/NOISE      â•‘  4242      â•‘ packet-emu   â•‘     5.5      â•‘   45,000   â•‘  SIMULATE/NOISE      â•‘   45,000   â•‘  SIMULATE/NOISE      â•‘
+    â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•©â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+STACK TRACE (vdbg):
+                    at debug/core.asm:0x0034                           &gt; ps aux | grep ghost                                                                        at debug/core.asm:0x0034
+                    at ui/retro_draw.c:0x01f8                          UID   PID  CPU%  MEM%  VIRT     RES     STATE  CMD                                           at ui/retro_draw.c:0x01f8
+                    at net/packet_handler.py:line: 123                 root  0421 0.2   1.1   0x12000  0x3400  S      /bin/ghost-shell --scan                       at net/packet_handler.py:line: 123                      
+                    at 0x00ff:0x7c -&gt; return to kernel                 ops   0999 0.0   0.3   0x08000  0x0F00  S      /usr/bin/retro-log --tail                     at 0x00ff:0x7c -&gt; return to kernel
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[CONFIG_JSON] ****************************************************************************************************************************************************************************************
+{
+"interface": "retro-net0","display": { "mode":"monochrome", "palette":"green", "gamma":0.8 },"audio": { "beep": true, "rate": 11025 },"ui": { "glitch": 0.12, "scanline": true, "crt_curve": 0.04 }
+"display": { "mode":"monochrome", "palette":"green", "gamma":0.8 },"audio": { "beep": true, "rate": 11025 },"ui": { "glitch": 0.12, "scanline": true, "crt_curve": 0.04 }
+}
+*******************************************************************************************************************************************************************************************************
+/* pseudo packet */
+HDR { ver:1, type:0x09, len:0x5E, id:0x3C4 } -&gt; BODY{ 0x00,0x11,0x22,... }
+CHECKSUM: ad3f7c9b (mismatched)
+Base64-blob: QWx0ZXJuYXRpdmUtZGVtbw== :: token: 9f3b-77aa-cc12-zz00
+SHA256: 3a7d6e9b2f8b1c4d5e6f7a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0
+-------------------------------------------------------------------------------
+/* pseudo packet */
+HDR { ver:1, type:0x09, len:0x5E, id:0x3C4 } -&gt; BODY{ 0x00,0x11,0x22,... }s
+CHECKSUM: ad3f7c9b (mismatched)
+-------------------------------------------------------------------------------
+Base64-blob: QWx0ZXJuYXRpdmUtZGVtbw== :: token: 9f3b-77aa-cc12-zz00
+SHA256: 3a7d6e9b2f8b1c4d5e6f7a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0
+                    </pre>
+                        </div>
+                        <div class="mission-contents-wrapper">
+                            <div class="mission-decode-window mission-window">
+                                <div class="mission-decode-window-innerbox mission-window-innerbox">
+                                    <div class="decoding-text"></div>
+                                    <div class="f-menu">
+                                        <br>
+                                        <div class="f-menu-start" id="firstMenuStart"></div>
+                                        <div class="f-menu-skip" id="firstMenuSkip"></div>
+                                    </div>  
+                                    <div class="f-loading"></div>
+                                    <div class="f-result"></div>
+                                    <div class="s-menu">
+                                        <br>
+                                        <div class="s-menu-start" id="secondMenuStart"></div>
+                                        <div class="s-menu-skip" id="secondMenuSkip"></div>
+                                    </div>  
+                                    <div class="s-loading"></div>
+                                    <div class="s-result"></div>
+                                    <div class="mission-result"></div>
+                                </div>
+                            </div>
+                            <div class="mission-text-window mission-window">
+                                <div class="mission-text-window-innerbox mission-window-innerbox">
+                                    <div class="line" data-text="- To craft stunning websites and 3D web experiences that combine cutting-edge technology with bold creativity."></div>
+                                    <div class="line" data-text="- To build digital identities that go beyond templates, creating unique experiences tailored to each client's vision."></div>
+                                    <div class="line" data-text="- To deliver pixel-perfect UI/UX designs that are intuitive, accessible, and visually captivating."></div>
+                                    <div class="line" data-text="- To provide premium web development services at competitive prices with 100% client satisfaction."></div>
+                                    <div class="line" data-text="- To be a trusted developer for businesses looking to launch, redesign, or elevate their digital presence."></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="service" class="service section">
+                    <div class="service-wrapper section-wrapper"></div>
+                </section>
+                <section id="contact" class="contact section">
+                    <div class="contact-wrapper section-wrapper">
+
+                        <div class="contact-legal-document-wrapper">
+
+                            <h4 class="contact-desc-highlight">
+                                <p>
+                                    Every great website begins with a single idea. 
+                                    Let me bring that idea to life for your brand. 
+                                    Whether you are launching a new product, building a 
+                                    3D experience, or redesigning your interface, I'm 
+                                    here to craft your perfect digital solution.
+                                </p>
+                            </h4>
+            
+                            <div class="contact-legal-document">
+                                <h3 class="contact-sub-title contact-legal-document-title">
+                                    Legal documents
+                                </h3>
+                                <h4 class="contact-desc contact-legal-document-desc contact-legal-document-privacy-statement">
+                                    <a href="/document/privacy-statement.html">Privacy Statement</a>
+                                </h4>
+                                <h4 class="contact-desc contact-legal-document-desc contact-legal-document-websiteTermsAndConditions">
+                                    <a href="/document/terms-and-conditions.html">Website Terms and Conditions</a>
+                                </h4>
+                            </div>
+
+                            <h6 class="contact-caption contact-copyright">
+                                â“’ 2026. Sunil â€” Web Developer & Designer
+                            </h6>
+                                                    
+                        </div>
+
+                        <div class="contact-information-wrapper">
+
+                            <div class="contact-title-wrapper">
+                                <h2 class="contact-title">
+                                    Contact
+                                </h2>
+                                <h4 class="contact-desc contact-title-desc">
+                                    <p>
+                                        I'm Sunil â€” a freelance Web & 3D Developer and UI/UX Designer. 
+                                        I build premium websites, immersive 3D web experiences, and 
+                                        beautiful user interfaces for clients worldwide. Let's collaborate 
+                                        and bring your next project to life.
+                                    </p>
+                                </h4>
+                            </div>
+
+                            <div class="contact-address-wrapper">
+                                <h3 class="contact-sub-title contact-address-title">
+                                    Location
+                                </h3>
+                                <h4 class="contact-desc contact-address-desc">
+                                    Available for remote work worldwide. 
+                                    Based in India.
+                                </h4>
+                            </div>
+
+                            <div class="contact-phone-wrapper">
+                                <h3 class="contact-sub-title contact-phone-title">
+                                    GitHub
+                                </h3>
+                                <h4 class="contact-desc contact-phone-desc">
+                                    <a href="https://github.com/Sunil56224972" style="color: inherit; text-decoration: none;">github.com/Sunil56224972</a>
+                                </h4>
+                            </div>
+
+                            <div class="contact-mail-wrapper">
+                                <h3 class="contact-sub-title contact-mail-title">
+                                    Mail
+                                </h3>
+                                <h4 class="contact-desc contact-mail-desc">
+                                    sunilnathyogi008@gmail.com
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>   
+
+</body></html>
