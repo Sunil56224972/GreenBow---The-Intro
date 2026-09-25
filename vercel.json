@@ -1,6 +1,11 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "./",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "buildCommand": "exit 0",
+  "installCommand": "echo 'skip install'",
+  "outputDirectory": ".",
   "framework": null,
-  "installCommand": ""
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
 }
